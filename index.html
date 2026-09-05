@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Página inicial de Brendo Farias para o curso WDD 231.">
+    <meta name="author" content="Brendo Farias">
+
+    <title>Brendo Farias | WDD 231</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/cursos.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <svg class="logo" viewBox="0 0 80 80" aria-label="Logo BF">
+            <circle cx="40" cy="40" r="37"></circle>
+            <text x="40" y="50" text-anchor="middle">BF</text>
+        </svg>
+
+        <span>Brendo Farias</span>
+    </div>
+
+    <button id="menuButton"
+        class="menu-button"
+        aria-label="Abrir menu"
+        aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <a class="active" href="index.html">Página Inicial</a>
+        <a href="#">Projeto da Câmara</a>
+        <a href="#">Projeto Final</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Página Inicial</h1>
+
+    <div class="content-grid">
+
+        <section>
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Olá! Meu nome é <strong>Brendo Farias</strong>.
+                Sou estudante de desenvolvimento de software e estou
+                aprendendo a criar experiências web modernas,
+                responsivas e acessíveis.
+            </p>
+
+            <p>
+                Esta página faz parte do meu trabalho no curso WDD 231.
+            </p>
+        </section>
+
+        <section>
+            <h2>Foto do Estudante</h2>
+
+            <div class="photo">
+                <img src="imagens/perfil.jpg" alt="Foto de Brendo Farias">
+            </div>
+        </section>
+
+        <section class="certificate">
+
+            <h2>Certificado de Programação</h2>
+
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+                    Todos os Cursos
+                </button>
+
+                <button class="filter" data-filter="WDD">
+                    Cursos WDD
+                </button>
+
+                <button class="filter" data-filter="CSE">
+                    Cursos CSE
+                </button>
+
+            </div>
+
+            <p>
+                Créditos exibidos:
+                <strong id="totalCredits">0</strong>
+            </p>
+
+            <div id="courseCards" class="course-grid"></div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="social">
+
+        <a href="https://github.com/brendofarias13/wdd231e"
+            target="_blank"
+            rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/brendo-farias-3ab075179/"
+            target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/brendo_farias13/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Instagram
+        </a>
+
+    </div>
+
+    <p>
+        © <span id="anoAtual"></span>
+        Brendo Farias | Maranhão, Brasil
+    </p>
+
+    <p id="ultimaModificacao"></p>
+
+</footer>
+
+</body>
+</html>

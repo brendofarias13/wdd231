@@ -1,0 +1,1 @@
+Coloque aqui sua foto/imagens, mantendo cada imagem abaixo de 125 kB.
