@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f3f5;
+    color: #222;
+}
+
+header {
+    background-color: #182238;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #182238;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+section img {
+    width: 100%;
+    max-width: 340px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #182238;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
