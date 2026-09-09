@@ -1,0 +1,30 @@
+{
+    "familia": {
+        "sobrenome": "Silva",
+        "dataMudanca": "2026-08-15",
+        "numeroPessoas": 4,
+        "recebeuVisitaBispo": true,
+        "membros": [
+            {
+                "nome": "Carlos Silva",
+                "genero": "Masculino",
+                "dataNascimento": "1985-04-12"
+            },
+            {
+                "nome": "Mariana Silva",
+                "genero": "Feminino",
+                "dataNascimento": "1988-09-25"
+            },
+            {
+                "nome": "Lucas Silva",
+                "genero": "Masculino",
+                "dataNascimento": "2012-03-18"
+            },
+            {
+                "nome": "Ana Silva",
+                "genero": "Feminino",
+                "dataNascimento": "2016-11-07"
+            }
+        ]
+    }
+}
