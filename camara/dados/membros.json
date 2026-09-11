@@ -1,0 +1,72 @@
+[
+    {
+        "nome": "Mateus Supermercado",
+        "endereco": "Rua Dorgival Pinheiro de Souza, 800, Centro, Açailândia - MA",
+        "telefone": "(98) 99202-0090",
+        "site": "https://www.grupomateus.com.br/",
+        "imagem": "mateus-supermercado.webp",
+        "nivel": 3,
+        "categoria": "Supermercado",
+        "descricao": "Supermercado com ampla variedade de produtos para a comunidade de Açailândia."
+    },
+    {
+        "nome": "Lojas Noroeste",
+        "endereco": "Rua São Luís, Centro, Açailândia - MA",
+        "telefone": "(99) 98438-9906",
+        "site": "https://www.instagram.com/noroesteacailandia/",
+        "imagem": "noroeste.jpg",
+        "nivel": 2,
+        "categoria": "Comércio",
+        "descricao": "Comércio varejista que atende consumidores da cidade de Açailândia."
+    },
+    {
+        "nome": "A Construtiva",
+        "endereco": "Avenida Des. Tácito de Caldas, 256, Centro, Açailândia - MA",
+        "telefone": "(99) 3538-1646",
+        "site": "https://linktr.ee/aconstrutiva8",
+        "imagem": "construtiva.jpg",
+        "nivel": 3,
+        "categoria": "Construção",
+        "descricao": "Loja de materiais de construção que atende Açailândia e região."
+    },
+    {
+        "nome": "Lojas Americanas",
+        "endereco": "Rua Duque de Caxias, S/N, Centro, Açailândia - MA",
+        "telefone": "(99) 99999-0004",
+        "site": "https://www.americanas.com.br/",
+        "imagem": "Lojas-Americanas.webp",
+        "nivel": 2,
+        "categoria": "Varejo",
+        "descricao": "Loja de departamento com produtos para diferentes necessidades dos consumidores."
+    },
+    {
+        "nome": "Casas Bahia",
+        "endereco": "Rua Des. Tácito de Caldas, 250, Centro, Açailândia - MA",
+        "telefone": "(99) 99171-1073",
+        "site": "https://www.casasbahia.com.br/",
+        "imagem": "casas-bahia.webp",
+        "nivel": 3,
+        "categoria": "Móveis e eletrodomésticos",
+        "descricao": "Empresa do setor de móveis, eletrodomésticos e eletrônicos."
+    },
+    {
+        "nome": "Magazine Luiza",
+        "endereco": "Avenida Des. Tácito de Caldas, 203 e 205, Centro, Açailândia - MA",
+        "telefone": "(99) 93300-5648",
+        "site": "https://www.magazineluiza.com.br/",
+        "imagem": "magazine-luiza.jpeg",
+        "nivel": 2,
+        "categoria": "Varejo e tecnologia",
+        "descricao": "Loja de departamento com produtos de tecnologia, móveis, eletrodomésticos e utilidades."
+    },
+    {
+        "nome": "Magazine Liliani",
+        "endereco": "Rua São Luís, 364, Centro, Açailândia - MA",
+        "telefone": "(99) 98409-8022",
+        "site": "https://www.liliani.com.br/",
+        "imagem": "liliane.jpg",
+        "nivel": 1,
+        "categoria": "Móveis e eletrodomésticos",
+        "descricao": "Loja de móveis e eletrodomésticos presente em Açailândia."
+    }
+]
