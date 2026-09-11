@@ -274,19 +274,13 @@ nav a.ativo {
 .lista .cartao-membro {
     border-radius: 8px;
     box-shadow: none;
-    display: flex;
-    flex-direction: column;
+    display: block;
     text-align: left;
     padding: 1rem;
 }
 
 .lista .cartao-membro img {
-    display: block;
-    width: 150px;
-    max-width: 100%;
-    height: 100px;
-    object-fit: contain;
-    margin: 0 0 1rem 0;
+    display: none;
 }
 
 .lista .cartao-membro h3 {
@@ -398,22 +392,6 @@ footer {
 
     .rodape-conteudo {
         grid-template-columns: 2fr 1fr;
-    }
-
-    /* Lista com imagem ao lado das informações */
-    .lista .cartao-membro {
-        display: grid;
-        grid-template-columns: 160px 1fr;
-        column-gap: 1.5rem;
-        align-items: center;
-    }
-
-    .lista .cartao-membro img {
-        grid-column: 1;
-        grid-row: 1 / span 6;
-        width: 150px;
-        height: 100px;
-        margin: 0;
     }
 }
 
