@@ -29,7 +29,7 @@ const obterMembros = async () => {
 
     try {
 
-        const resposta = await fetch("dados/membros.json");
+        const resposta = await fetch("data/membros.json");
 
         if (!resposta.ok) {
             throw new Error("Não foi possível carregar os membros.");
