@@ -160,7 +160,7 @@ if (gradeButton && listaButton && membrosContainer) {
 // OPENWEATHERMAP
 // ==============================
 
-// COLE SUA CHAVE SOMENTE AQUI
+
 const API_KEY = "2621f4580e4d30673803a07e103bb4a6";
 
 const LATITUDE = -4.9475;
