@@ -5,20 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Associe-se à Câmara de Comércio e fortaleça sua empresa, seus negócios e nossa comunidade.">
-    <meta name="author" content="Brendo Farias">
-
     <title>Associe-se | Câmara de Comércio</title>
 
+    <meta name="description"
+        content="Associe sua empresa à Câmara de Comércio e fortaleça seus negócios por meio de conexões e oportunidades.">
+
+    <meta name="author" content="Brendo Farias">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Associe-se | Câmara de Comércio">
+    <meta property="og:description"
+        content="Associe sua empresa à Câmara de Comércio e faça parte da nossa comunidade empresarial.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://brendofarias13.github.io/wdd231/camara/imagens/camara.jpg">
+    <meta property="og:url"
+        content="https://brendofarias13.github.io/wdd231/camara/associe-se.html">
+
+    <!-- Favicon -->
     <link rel="icon" href="imagens/favicon.ico">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/camara.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/camara.js" defer></script>
 </head>
 
 <body>
@@ -28,6 +46,7 @@
 
             <a href="index.html" class="logo">
                 <span class="logo-simbolo">CC</span>
+
                 <span>
                     <strong>Câmara de Comércio</strong>
                     <small>Desenvolvimento e negócios</small>
@@ -50,107 +69,148 @@
 
     <main>
 
-        <section>
+        <section class="inicio-secao">
+
             <h1>Associe-se à Câmara</h1>
 
             <p>
-                Faça parte da nossa rede de empresas e contribua para o
-                desenvolvimento do comércio e dos negócios da nossa comunidade.
-            </p>
-        </section>
-
-        <section>
-            <h2>Faça parte da nossa comunidade empresarial</h2>
-
-            <p>
-                Associar sua empresa à Câmara de Comércio é uma oportunidade
-                de criar conexões, fortalecer seus negócios e participar de
-                iniciativas que ajudam no desenvolvimento da comunidade.
+                Faça parte da Câmara de Comércio e conecte sua empresa
+                a novos parceiros, oportunidades e iniciativas para o
+                desenvolvimento empresarial de nossa comunidade.
             </p>
 
             <h2>Por que se associar?</h2>
 
             <ul>
-                <li>Fortaleça a presença da sua empresa na comunidade.</li>
-                <li>Crie novas conexões com outros empresários.</li>
+                <li>Amplie sua rede de contatos profissionais.</li>
+                <li>Conheça novas oportunidades de negócios.</li>
                 <li>Participe de eventos e atividades empresariais.</li>
-                <li>Tenha sua empresa divulgada no diretório da Câmara.</li>
+                <li>Fortaleça a presença da sua empresa na comunidade.</li>
             </ul>
+
         </section>
 
-        <section>
-            <h2>Formulário de Associação</h2>
+        <section class="inicio-secao">
 
-            <form action="#" method="get">
+            <h2>Formulário de associação</h2>
 
-                <label for="empresa">Nome da empresa</label>
-                <input type="text" id="empresa" name="empresa" required>
+            <form>
 
-                <label for="nome">Nome do responsável</label>
-                <input type="text" id="nome" name="nome" required>
+                <p>
+                    <label for="nome">Nome da empresa</label>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
+                <p>
+                    <label for="responsavel">Nome do responsável</label>
+                    <input type="text" id="responsavel" name="responsavel" required>
+                </p>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-                <label for="site">Site da empresa</label>
-                <input type="url" id="site" name="site" placeholder="https://">
+                <p>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </p>
 
-                <label for="nivel">Nível de associação</label>
-                <select id="nivel" name="nivel" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="membro">Membro</option>
-                    <option value="prata">Prata</option>
-                    <option value="ouro">Ouro</option>
-                </select>
+                <p>
+                    <label for="site">Site da empresa</label>
+                    <input type="url" id="site" name="site">
+                </p>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                <p>
+                    <label for="nivel">Nível de associação</label>
+                    <select id="nivel" name="nivel" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="membro">Membro</option>
+                        <option value="prata">Prata</option>
+                        <option value="ouro">Ouro</option>
+                    </select>
+                </p>
 
-                <button type="submit">Enviar solicitação</button>
+                <p>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar solicitação</button>
+                </p>
 
             </form>
-        </section>
-
-        <section>
-            <h2>Níveis de Associação</h2>
-
-            <article>
-                <h3>Membro</h3>
-                <p>
-                    Para empresas que desejam fazer parte da rede empresarial
-                    e participar das iniciativas da Câmara.
-                </p>
-            </article>
-
-            <article>
-                <h3>Prata</h3>
-                <p>
-                    Para empresas que desejam ampliar sua participação,
-                    conexões e oportunidades de divulgação.
-                </p>
-            </article>
-
-            <article>
-                <h3>Ouro</h3>
-                <p>
-                    Para empresas que desejam maior participação nas ações,
-                    eventos e oportunidades de divulgação da Câmara.
-                </p>
-            </article>
 
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; <span id="ano"></span> Câmara de Comércio e Desenvolvimento Empresarial</p>
-        <p>Brendo Farias</p>
-    </footer>
 
-    <script src="scripts/camara.js" defer></script>
+        <div class="rodape-conteudo">
+
+            <div class="rodape-info">
+
+                <h2>Câmara de Comércio</h2>
+
+                <p>
+                    Fortalecendo empresas e desenvolvendo nossa comunidade.
+                </p>
+
+                <p>
+                    contato@camaracomercio.com.br
+                </p>
+
+                <p>
+                    (99) 99999-9999
+                </p>
+
+            </div>
+
+            <div class="rodape-redes">
+
+                <h2>Conecte-se</h2>
+
+                <div class="redes-sociais">
+
+                    <a href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="rodape-desenvolvimento">
+
+            <p>
+                © <span id="current-year"></span>
+                Câmara de Comércio
+            </p>
+
+            <p>
+                Brendo Farias | WDD 231
+            </p>
+
+            <p>
+                Última modificação:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
 
