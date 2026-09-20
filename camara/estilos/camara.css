@@ -409,4 +409,143 @@ footer {
     .titulo-pagina {
         padding-top: 3rem;
     }
+
+
+}
+/* =========================================
+   PÁGINA DE ASSOCIAÇÃO
+   ========================================= */
+
+   .associacao {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 20px 60px;
+}
+
+.associacao-introducao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.associacao-introducao h1 {
+    color: #12355b;
+    margin-bottom: 15px;
+}
+
+.associacao-introducao p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.associacao-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.associacao-beneficios {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px;
+    border-top: 5px solid #1f6f8b;
+}
+
+.associacao-beneficios h2 {
+    margin-top: 0;
+    color: #12355b;
+    margin-bottom: 20px;
+}
+
+.associacao-beneficios ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.associacao-beneficios li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.associacao-formulario {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #f2b134;
+}
+
+.associacao-formulario h2 {
+    color: #12355b;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.associacao-formulario label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #12355b;
+}
+
+.associacao-formulario input,
+.associacao-formulario select,
+.associacao-formulario textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.associacao-formulario input:focus,
+.associacao-formulario select:focus,
+.associacao-formulario textarea:focus {
+    outline: 2px solid #1f6f8b;
+    border-color: #1f6f8b;
+}
+
+.associacao-formulario textarea {
+    resize: vertical;
+}
+
+.associacao-formulario button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2b134;
+    color: #12355b;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.associacao-formulario button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+
+    .associacao {
+        padding: 30px 15px 45px;
+    }
+
+    .associacao-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .associacao-beneficios,
+    .associacao-formulario {
+        padding: 22px;
+    }
+
 }
