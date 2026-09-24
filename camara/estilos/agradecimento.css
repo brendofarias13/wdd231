@@ -1,0 +1,80 @@
+/* ================================
+   PÁGINA DE AGRADECIMENTO
+================================ */
+
+.agradecimento {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.agradecimento h1 {
+    color: #12355b;
+    margin-bottom: 1rem;
+}
+
+.mensagem-agradecimento {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+/* DADOS ENVIADOS */
+.dados-formulario {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.dado {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-left: 5px solid #f2b134;
+    border-radius: 5px;
+}
+
+.rotulo {
+    font-weight: 700;
+    color: #12355b;
+}
+
+.dado span:last-child {
+    overflow-wrap: anywhere;
+}
+
+/* BOTÃO VOLTAR */
+.voltar-associacao {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #12355b;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.voltar-associacao:hover {
+    background-color: #1f6f8b;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+    .agradecimento {
+        padding: 4rem 2rem;
+    }
+
+    .dados-formulario {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dado:last-child {
+        grid-column: 1 / -1;
+    }
+}

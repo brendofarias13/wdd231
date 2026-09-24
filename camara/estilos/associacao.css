@@ -1,0 +1,250 @@
+/* ================================
+   PÁGINA DE ASSOCIAÇÃO
+================================ */
+
+/* CONTEÚDO PRINCIPAL */
+.associacao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* INTRODUÇÃO */
+.associacao-introducao {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.associacao-introducao h1 {
+    margin-bottom: 1rem;
+}
+
+.associacao-introducao p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ÁREA PRINCIPAL */
+.associacao-conteudo {
+    display: grid;
+    gap: 2rem;
+}
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.associacao-formulario {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.associacao-formulario h2 {
+    margin-top: 0;
+    color: #12355b;
+}
+
+.associacao-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.associacao-formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 500;
+}
+
+.associacao-formulario input,
+.associacao-formulario select,
+.associacao-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+}
+
+.associacao-formulario input:focus,
+.associacao-formulario select:focus,
+.associacao-formulario textarea:focus {
+    outline: 3px solid #f2b134;
+    border-color: #12355b;
+}
+
+.associacao-formulario textarea {
+    resize: vertical;
+}
+
+.associacao-formulario button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #12355b;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.associacao-formulario button:hover {
+    background-color: #1f6f8b;
+}
+
+/* ================================
+   CARTÕES
+================================ */
+
+.associacao-niveis {
+    display: flex;
+    flex-direction: column;
+}
+
+.associacao-niveis h2 {
+    color: #12355b;
+}
+
+.cards-associacao {
+    display: grid;
+    gap: 1rem;
+}
+
+.card-associacao {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #12355b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    animation: aparecer-card 1s ease both;
+}
+
+.card-associacao:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card-associacao:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.card-associacao:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.card-associacao:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.card-associacao h3 {
+    margin-top: 0;
+    color: #12355b;
+}
+
+.card-associacao p {
+    line-height: 1.5;
+}
+
+.card-associacao a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: #f2b134;
+    color: #12355b;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-associacao a:hover {
+    background-color: #12355b;
+    color: white;
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+@keyframes aparecer-card {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   MODAIS
+================================ */
+
+dialog {
+    max-width: 500px;
+    width: calc(100% - 2rem);
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    color: #12355b;
+    margin-top: 0;
+}
+
+dialog li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.fechar-modal {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #12355b;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    background-color: #1f6f8b;
+}
+
+/* ================================
+   DESKTOP
+================================ */
+
+@media (min-width: 768px) {
+
+    .associacao {
+        padding: 3rem 2rem;
+    }
+
+    .associacao-conteudo {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .cards-associacao {
+        grid-template-columns: 1fr;
+    }
+
+    .associacao-niveis {
+        position: sticky;
+        top: 1rem;
+    }
+
+}
