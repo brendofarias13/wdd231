@@ -14,8 +14,7 @@
     display: block;
     width: 100%;
     height: auto;
-    max-height: 600px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .hero-conteudo {
