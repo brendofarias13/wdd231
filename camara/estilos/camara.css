@@ -51,6 +51,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    position: relative;
 }
 
 /* ==============================
@@ -103,8 +104,12 @@ header {
 nav {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
     background-color: var(--cor-principal);
+    z-index: 1000;
 }
 
 nav.aberto {
@@ -357,6 +362,7 @@ footer {
     nav {
         display: flex;
         flex-direction: row;
+        position: static;
         width: auto;
         margin-left: auto;
     }
