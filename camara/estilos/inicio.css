@@ -2,9 +2,11 @@
    PÁGINA INICIAL - CÂMARA
    ============================== */
 
-/* HERO */
+/* ==============================
+   HERO
+   ============================== */
 
-.hero {
+   .hero {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -25,11 +27,13 @@
     padding: 2rem;
     background-color: rgba(18, 53, 91, 0.9);
     color: white;
+    box-sizing: border-box;
 }
 
 .hero-conteudo h1 {
     margin-top: 0;
     font-size: 2.2rem;
+    line-height: 1.2;
 }
 
 .hero-conteudo p {
@@ -54,7 +58,7 @@
 
 /* ==============================
    SEÇÕES
-================================= */
+   ============================== */
 
 .inicio-secao {
     max-width: 1200px;
@@ -73,7 +77,7 @@
 
 /* ==============================
    EVENTOS
-================================= */
+   ============================== */
 
 .eventos {
     display: grid;
@@ -98,7 +102,7 @@
 
 /* ==============================
    CLIMA
-================================= */
+   ============================== */
 
 .clima {
     background-color: #f5f5f5;
@@ -142,7 +146,7 @@
 
 /* ==============================
    DESTAQUES
-================================= */
+   ============================== */
 
 .destaques {
     display: grid;
@@ -194,9 +198,10 @@
 
 /* ==============================
    TELAS MAIORES
-================================= */
+   ============================== */
 
 @media screen and (min-width: 700px) {
+
     .eventos {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -213,16 +218,40 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Capa no desktop */
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-conteudo {
+        left: 8%;
+        max-width: 600px;
+        padding: 2rem;
+    }
+
     .hero-conteudo h1 {
         font-size: 2.7rem;
+        line-height: 1.2;
     }
 }
 
 /* ==============================
    TELAS PEQUENAS / CELULAR
-================================= */
+   ============================== */
 
 @media screen and (max-width: 699px) {
+
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
     .hero-conteudo {
         top: 50%;
         left: 5%;
