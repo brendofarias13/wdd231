@@ -1,0 +1,183 @@
+
+/* =========================================================
+   MR. BROWNIE GOURMET
+   Estilos específicos da página de contato
+   ========================================================= */
+
+   .contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+    align-items: start;
+    gap: 36px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-form-container {
+    min-width: 0;
+  }
+  
+  .contact-form-container .section-heading {
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  
+  #form-contato {
+    display: grid;
+    gap: 22px;
+    padding: 30px;
+    border: 1px solid #e4d3c5;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(61, 36, 24, 0.12);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    color: #3d2418;
+    font-weight: 700;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #73513e;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #3d2418;
+  }
+  
+  .form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #006b70;
+    outline: 2px solid #006b70;
+    outline-offset: 2px;
+  }
+  
+  .form-note {
+    margin-bottom: 0;
+    color: #5a3418;
+    font-size: 0.9rem;
+  }
+  
+  .submission-result {
+    margin-top: 24px;
+    padding: 26px;
+    border: 1px solid #e4d3c5;
+    border-radius: 12px;
+    background: #fff8f2;
+    overflow-wrap: anywhere;
+  }
+  
+  .submission-result[hidden] {
+    display: none;
+  }
+  
+  .submission-result dl {
+    margin: 20px 0;
+  }
+  
+  .submission-result dt {
+    margin-top: 14px;
+    color: #4b2818;
+    font-weight: 700;
+  }
+  
+  .submission-result dd {
+    margin-top: 4px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  
+  .contact-information {
+    min-width: 0;
+    padding: 28px;
+    border: 1px solid #e4d3c5;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(61, 36, 24, 0.12);
+  }
+  
+  .contact-information > p {
+    overflow-wrap: anywhere;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e4d3c5;
+  }
+  
+  .contact-method img {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+  
+  .contact-method > div {
+    min-width: 0;
+  }
+  
+  .contact-method h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-method a {
+    overflow-wrap: anywhere;
+  }
+  
+  .contact-icon {
+    display: flex;
+    flex: 0 0 36px;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: #4b2818;
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 800px) {
+    .contact-layout {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+    }
+  
+    .contact-information {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #form-contato {
+      padding: 22px 18px;
+    }
+  
+    .contact-information {
+      padding: 22px 18px;
+    }
+  
+    .submission-result {
+      padding: 20px 16px;
+    }
+  }
+  

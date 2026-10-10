@@ -30,7 +30,7 @@
   
   body {
     min-width: 320px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: var(--marrom-texto);
     background: var(--creme);
@@ -121,6 +121,7 @@
   h1,
   h2,
   h3 {
+    font-family: "Poppins", Arial, sans-serif;
     line-height: 1.25;
     color: var(--marrom-escuro);
   }
@@ -159,6 +160,7 @@
   }
   
   /* CABEÇALHO E NAVEGAÇÃO */
+  
   .site-header {
     position: relative;
     z-index: 1000;
@@ -230,6 +232,7 @@
   }
   
   /* PÁGINA INICIAL */
+  
   .hero {
     width: 100%;
     max-width: none;
@@ -381,6 +384,7 @@
   }
   
   /* PÁGINAS INTERNAS */
+  
   .page-hero {
     padding-top: 54px;
     padding-bottom: 54px;
@@ -392,6 +396,7 @@
   }
   
   /* CARTÕES E GRADES */
+  
   .size-grid,
   .delivery-details,
   .partners-grid,
@@ -457,6 +462,7 @@
   }
   
   /* PÁGINA DE SABORES */
+  
   .filter-area {
     display: flex;
     align-items: center;
@@ -547,7 +553,8 @@
     text-align: center;
   }
   
-  /* CONTATO */
+  /* ESTILOS DE CONTATO COMPATÍVEIS COM AS CLASSES EXISTENTES */
+  
   .pagina-contato {
     max-width: 900px;
     margin: 0 auto;
@@ -563,19 +570,24 @@
     box-shadow: var(--sombra);
   }
   
-  .campo {
+  .campo,
+  .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
   
-  .campo label {
+  .campo label,
+  .form-group label {
     font-weight: 700;
   }
   
   .campo input,
   .campo select,
-  .campo textarea {
+  .campo textarea,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
     width: 100%;
     min-height: 48px;
     padding: 12px 14px;
@@ -585,22 +597,28 @@
     color: var(--marrom-texto);
   }
   
-  .campo textarea {
+  .campo textarea,
+  .form-group textarea {
     min-height: 140px;
     resize: vertical;
   }
   
   .campo input:focus,
   .campo select:focus,
-  .campo textarea:focus {
+  .campo textarea:focus,
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
     border-color: #006b70;
   }
   
-  .mensagem-sucesso {
+  .mensagem-sucesso,
+  .submission-result {
     overflow-wrap: anywhere;
   }
   
   .mensagem-sucesso[hidden],
+  .submission-result[hidden],
   [hidden] {
     display: none !important;
   }
@@ -616,7 +634,16 @@
     background: var(--creme);
   }
   
-  .informacoes-contato {
+  .submission-result {
+    margin-top: 24px;
+    padding: 26px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: var(--creme);
+  }
+  
+  .informacoes-contato,
+  .contact-information {
     background: var(--branco);
   }
   
@@ -656,6 +683,7 @@
   }
   
   /* MODAL */
+  
   dialog[data-modal] {
     width: min(90%, 600px);
     max-width: 600px;
@@ -684,6 +712,7 @@
   }
   
   /* RODAPÉ */
+  
   .site-footer {
     padding: 48px 24px 20px;
     background: var(--marrom-escuro);
@@ -742,6 +771,7 @@
   }
   
   /* TABLETS */
+  
   @media (max-width: 900px) {
     .header-container {
       gap: 12px;
@@ -781,6 +811,7 @@
   }
   
   /* CELULARES */
+  
   @media (max-width: 600px) {
     html {
       scroll-padding-top: 20px;
@@ -901,14 +932,18 @@
   }
   
   /* ACESSIBILIDADE: REDUZ MOVIMENTOS */
+  
   @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  
     *,
     *::before,
     *::after {
-      scroll-behavior: auto !important;
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      transition-duration: 0.01ms;
     }
   }
   
