@@ -1,0 +1,183 @@
+
+[
+  {
+    "id": 1,
+    "nome": "Ninho",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com creme de Ninho.",
+    "imagem": "imagens/ninho.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 2,
+    "nome": "Brigadeiro",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com brigadeiro.",
+    "imagem": "imagens/brigadeiro.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 3,
+    "nome": "Brigadinho",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com brigadeiro e chocolate granulado.",
+    "imagem": "imagens/brigadinho.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 4,
+    "nome": "Maracujá",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com creme sabor maracujá.",
+    "imagem": "imagens/maracuja.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 5,
+    "nome": "Doce de Leite",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com doce de leite.",
+    "imagem": "imagens/docedeleite.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 6,
+    "nome": "Beijinho",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com creme de coco.",
+    "imagem": "imagens/beijinho.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 7,
+    "nome": "Cupuaçu",
+    "categoria": "recheados-5",
+    "descricao": "Brownie recheado com creme sabor cupuaçu.",
+    "imagem": "imagens/cupuacu.jpeg",
+    "preco": 5,
+    "tamanho": "5x5 cm",
+    "peso": "40–50 g"
+  },
+  {
+    "id": 8,
+    "nome": "Ninho",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com creme de Ninho.",
+    "imagem": "imagens/ninho.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 9,
+    "nome": "Brigadeiro",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com brigadeiro.",
+    "imagem": "imagens/brigadeiro.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 10,
+    "nome": "Brigadinho",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com brigadeiro e chocolate granulado.",
+    "imagem": "imagens/brigadinho.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 11,
+    "nome": "Maracujá",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com creme sabor maracujá.",
+    "imagem": "imagens/maracuja.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 12,
+    "nome": "Doce de Leite",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com doce de leite.",
+    "imagem": "imagens/docedeleite.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 13,
+    "nome": "Beijinho",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com creme de coco.",
+    "imagem": "imagens/beijinho.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 14,
+    "nome": "Cupuaçu",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com creme sabor cupuaçu.",
+    "imagem": "imagens/cupuacu.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 15,
+    "nome": "Nutella",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com Nutella.",
+    "imagem": "imagens/nutella.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 16,
+    "nome": "Ninho com Nutella",
+    "categoria": "recheados-7",
+    "descricao": "Brownie recheado com creme de Ninho e Nutella.",
+    "imagem": "imagens/ninhocomnutella.jpeg",
+    "preco": 7,
+    "tamanho": "6x6 cm",
+    "peso": "75–80 g"
+  },
+  {
+    "id": 17,
+    "nome": "Mini Brownies",
+    "categoria": "encomendas",
+    "descricao": "Mini brownies para festas, aniversários, casamentos e formaturas. Encomendas a partir de 50 unidades.",
+    "imagem": "imagens/minibrownie.jpeg",
+    "preco": 140,
+    "tamanho": "Mini",
+    "peso": "Consultar"
+  },
+  {
+    "id": 18,
+    "nome": "Browniettone",
+    "categoria": "sazonais",
+    "descricao": "Produto especial de Natal da Mr. Brownie Gourmet.",
+    "imagem": "imagens/browniettone.jpeg",
+    "preco": 18,
+    "tamanho": "Individual",
+    "peso": "Consultar"
+  }
+]

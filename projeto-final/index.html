@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Conheça a Mr. Brownie Gourmet em Açailândia-MA. Brownies artesanais recheados, mini brownies para festas e Browniettone.">
+  <meta name="author" content="Brendo Farias">
+  <meta name="theme-color" content="#5A3418">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mr. Brownie Gourmet | Felicidade em cada mordida">
+  <meta property="og:description" content="Brownies artesanais preparados com carinho em Açailândia, Maranhão.">
+  <meta property="og:image" content="imagens/capabrownies.jpeg">
+
+  <title>Mr. Brownie Gourmet | Brownies Artesanais</title>
+
+  <link rel="icon" href="imagens/logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles/estilos.css">
+
+  <script type="module" src="scripts/principal.js"></script>
+  <script type="module" src="scripts/modal.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a class="logo-link" href="index.html" aria-label="Mr. Brownie Gourmet - Página inicial">
+        <img src="imagens/logo.jpeg" alt="Logo Mr. Brownie Gourmet" width="180" height="70">
+      </a>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >☰</button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegação principal">
+        <a href="index.html" class="active" aria-current="page">Início</a>
+        <a href="sabores.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Brownies artesanais em Açailândia — MA</p>
+
+          <h1>Felicidade em cada mordida.</h1>
+
+          <p>
+            Brownies preparados com carinho, com uma massa deliciosa
+            e sabores para deixar seu dia ainda melhor.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="sabores.html">
+              Conheça nossos produtos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://wa.me/5599991599690"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Faça seu pedido
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="imagens/capabrownies.jpeg"
+            alt="Brownies artesanais da Mr. Brownie Gourmet"
+            width="800"
+            height="500"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSA HISTÓRIA -->
+    <section class="section container" aria-labelledby="historia-titulo">
+      <div class="story-layout">
+        <div class="story-content">
+          <p class="eyebrow">Nossa história</p>
+
+          <h2 id="historia-titulo">
+            Feitos com carinho, compartilhados com amor
+          </h2>
+
+          <p>
+            Nossa história começou em 2017, com uma lembrança especial:
+            brownie acompanhado de sorvete. Durante a pandemia, voltamos
+            a preparar essa delícia e percebemos que poderíamos compartilhar
+            esse sabor com outras pessoas.
+          </p>
+
+          <p>
+            Em julho de 2023, começamos a vender nossos brownies, com apenas
+            três sabores. Com dedicação e o apoio da família, fomos ampliando
+            nosso catálogo e levando nossos produtos a mais clientes.
+          </p>
+
+          <p>
+            Hoje, a Mr. Brownie Gourmet continua crescendo com o mesmo objetivo:
+            preparar produtos saborosos e proporcionar felicidade em cada mordida.
+          </p>
+
+          <button
+            class="button button-secondary"
+            id="abrir-historia"
+            type="button"
+            data-modal-open="historia-modal"
+          >
+            Conheça mais da nossa história
+          </button>
+        </div>
+
+        <div class="story-image">
+          <img
+            src="imagens/logo.jpeg"
+            alt="Identidade visual da Mr. Brownie Gourmet"
+            width="400"
+            height="300"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- JANELA COM A HISTÓRIA COMPLETA -->
+    <dialog id="historia-modal" data-modal aria-labelledby="modal-titulo">
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          type="button"
+          data-modal-close
+          aria-label="Fechar janela"
+        >✕</button>
+
+        <p class="eyebrow">Nossa trajetória</p>
+
+        <h2 id="modal-titulo">
+          Uma história feita de brownie e dedicação
+        </h2>
+
+        <p>
+          A Mr. Brownie Gourmet nasceu de uma lembrança afetiva e cresceu
+          com o desejo de transformar uma receita especial em um produto
+          para compartilhar com outras pessoas.
+        </p>
+
+        <p>
+          Começamos com três sabores e, aos poucos, ampliamos as opções,
+          atendendo encomendas e levando nossos brownies a diferentes pontos
+          de venda em Açailândia, Maranhão.
+        </p>
+
+        <p>
+          Obrigado por fazer parte da nossa história!
+        </p>
+
+        <button class="button button-primary" type="button" data-modal-close>
+          Fechar
+        </button>
+      </div>
+    </dialog>
+
+    <!-- PRODUTOS EM DESTAQUE -->
+    <section class="section section-highlight" aria-labelledby="produtos-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Nossas opções</p>
+
+          <h2 id="produtos-titulo">Um brownie para cada momento</h2>
+
+          <p>Escolha o tamanho ideal para você ou para compartilhar.</p>
+        </div>
+
+        <div class="product-overview-grid">
+
+          <!-- BROWNIES RECHEADOS -->
+          <article class="product-overview-card">
+            <img
+              src="imagens/ninho.jpeg"
+              alt="Brownie recheado com Ninho"
+              width="400"
+              height="300"
+              loading="lazy"
+            >
+
+            <div class="card-content">
+              <h3>Recheados de R$ 5</h3>
+
+              <p>Sabores deliciosos para adoçar seu dia.</p>
+
+              <p><strong>A partir de R$ 5,00</strong></p>
+            </div>
+          </article>
+
+          <!-- BROWNIES RECHEADOS ESPECIAIS -->
+          <article class="product-overview-card">
+            <img
+              src="imagens/ninhocomnutella.jpeg"
+              alt="Brownie recheado com Ninho e Nutella"
+              width="400"
+              height="300"
+              loading="lazy"
+            >
+
+            <div class="card-content">
+              <h3>Recheados especiais</h3>
+
+              <p>Opções especiais para quem ama recheio.</p>
+
+              <p><strong>R$ 7,00</strong></p>
+            </div>
+          </article>
+
+          <!-- MINI BROWNIES -->
+          <article class="product-overview-card">
+            <img
+              src="imagens/minibrownie.jpeg"
+              alt="Mini brownies para comemorações"
+              width="400"
+              height="300"
+              loading="lazy"
+            >
+
+            <div class="card-content">
+              <h3>Mini brownies</h3>
+
+              <p>Para festas, aniversários, casamentos e outros eventos.</p>
+
+              <p><strong>R$ 140,00 o cento</strong></p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-action">
+          <a class="button button-primary" href="sabores.html">
+            Ver todos os produtos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BROWN IETTONE -->
+    <section class="section container">
+      <div class="feature-layout">
+        <div class="feature-image">
+          <img
+            src="imagens/browniettone.jpeg"
+            alt="Browniettone especial de Natal"
+            width="600"
+            height="450"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="feature-content">
+          <p class="eyebrow">Uma edição especial</p>
+
+          <h2>Browniettone</h2>
+
+          <p>
+            Uma opção sazonal para deixar as comemorações de Natal ainda
+            mais gostosas.
+          </p>
+
+          <p><strong>R$ 18,00 por unidade.</strong></p>
+
+          <a class="button button-primary" href="sabores.html">
+            Conheça nossos produtos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA CONTATO -->
+    <section class="section section-highlight">
+      <div class="container cta-content">
+        <p class="eyebrow">Estamos em Açailândia — MA</p>
+
+        <h2>Seu próximo brownie está esperando por você</h2>
+
+        <p>
+          Fale conosco para fazer pedidos e consultar as opções disponíveis.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="contato.html">
+            Entre em contato
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://wa.me/5599991599690"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        <img
+          src="imagens/logo.jpeg"
+          alt="Mr. Brownie Gourmet"
+          width="150"
+          height="60"
+          loading="lazy"
+        >
+
+        <p>Felicidade em cada mordida.</p>
+
+        <p>Açailândia — MA</p>
+      </div>
+
+      <div class="footer-links">
+        <h2>Navegue</h2>
+
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="sabores.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <div class="footer-contact">
+        <h2>Entre em contato</h2>
+
+        <a
+          href="https://wa.me/5599991599690"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://instagram.com/mrbrownie74"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a href="mailto:mr.brownie2307@gmail.com">E-mail</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="current-year"></span> Mr. Brownie Gourmet.
+        Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

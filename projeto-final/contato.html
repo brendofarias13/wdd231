@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Entre em contato com a Mr. Brownie Gourmet em Açailândia-MA para fazer pedidos, consultar sabores e solicitar encomendas.">
+  <meta name="author" content="Brendo Farias">
+  <meta name="theme-color" content="#5A3418">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato | Mr. Brownie Gourmet">
+  <meta property="og:description" content="Fale com a Mr. Brownie Gourmet e consulte nossos brownies artesanais.">
+  <meta property="og:image" content="imagens/capabrownies.jpeg">
+
+  <title>Contato | Mr. Brownie Gourmet</title>
+
+  <link rel="icon" href="imagens/logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles/estilos.css">
+
+  <script type="module" src="scripts/principal.js"></script>
+  <script type="module" src="scripts/contato.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a class="logo-link" href="index.html" aria-label="Mr. Brownie Gourmet - Página inicial">
+        <img src="imagens/logo.jpeg" alt="Logo Mr. Brownie Gourmet" width="180" height="70">
+      </a>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >☰</button>
+
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sabores.html">Produtos</a>
+        <a href="contato.html" class="active" aria-current="page">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Estamos à disposição</p>
+        <h1>Entre em contato</h1>
+        <p>
+          Quer fazer um pedido, encomendar mini brownies ou tirar uma dúvida?
+          Envie sua mensagem.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container contact-layout">
+      <div class="contact-form-container">
+        <div class="section-heading">
+          <p class="eyebrow">Envie sua mensagem</p>
+          <h2>Como podemos ajudar?</h2>
+          <p>Preencha os campos abaixo. Os campos com * são obrigatórios.</p>
+        </div>
+
+        <form id="form-contato" action="contato.html" method="get">
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              autocomplete="name"
+              maxlength="100"
+              required
+              placeholder="Digite seu nome"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone ou WhatsApp</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              autocomplete="tel"
+              maxlength="20"
+              placeholder="(99) 99999-9999"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="pedido">Fazer um pedido</option>
+              <option value="duvida">Tirar uma dúvida</option>
+              <option value="informacao">Informações sobre produtos</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Sua mensagem *</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              maxlength="1000"
+              required
+              placeholder="Escreva sua mensagem aqui"
+            ></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Enviar mensagem
+          </button>
+
+          <p class="form-note">
+            Este formulário exibe os dados enviados nesta página.
+            Para conversar diretamente conosco, use também o WhatsApp.
+          </p>
+        </form>
+
+        <section id="resultado-contato" class="submission-result" aria-live="polite" hidden>
+          <h2>Mensagem recebida!</h2>
+          <p>Confira os dados que você enviou:</p>
+          <dl>
+            <dt>Nome</dt>
+            <dd id="resultado-nome"></dd>
+
+            <dt>Telefone</dt>
+            <dd id="resultado-telefone"></dd>
+
+            <dt>Assunto</dt>
+            <dd id="resultado-assunto"></dd>
+
+            <dt>Mensagem</dt>
+            <dd id="resultado-mensagem"></dd>
+          </dl>
+
+          <a
+            id="link-whatsapp"
+            class="button button-primary"
+            href="https://wa.me/5599991599690"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Continuar pelo WhatsApp
+          </a>
+        </section>
+      </div>
+
+      <aside class="contact-information">
+        <p class="eyebrow">Fale diretamente</p>
+        <h2>Mr. Brownie Gourmet</h2>
+        <p>Estamos em Açailândia, Maranhão.</p>
+
+        <div class="contact-method">
+          <img src="imagens/whatsapp.png" alt="" width="36" height="36" loading="lazy">
+          <div>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/5599991599690" target="_blank" rel="noopener noreferrer">
+              Enviar uma mensagem
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <img src="imagens/instagram.png" alt="" width="36" height="36" loading="lazy">
+          <div>
+            <h3>Instagram</h3>
+            <a href="https://instagram.com/mrbrownie73" target="_blank" rel="noopener noreferrer">
+              Acompanhe nossos produtos
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <div>
+            <h3>E-mail</h3>
+            <a href="mailto:mr.brownie2307@gmail.com">
+              mr.brownie2307@gmail.com
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section section-highlight">
+      <div class="container cta-content">
+        <p class="eyebrow">Felicidade em cada mordida</p>
+        <h2>Conheça nossos produtos</h2>
+        <p>Descubra os sabores e encontre seu próximo brownie favorito.</p>
+        <a class="button button-primary" href="sabores.html">Ver produtos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="imagens/logo.jpeg" alt="Mr. Brownie Gourmet" width="150" height="60" loading="lazy">
+        <p>Felicidade em cada mordida.</p>
+        <p>Açailândia — MA</p>
+      </div>
+
+      <div class="footer-links">
+        <h2>Navegue</h2>
+        <a href="index.html">Início</a>
+        <a href="sabores.html">Produtos</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </div>
+
+      <div class="footer-contact">
+        <h2>Entre em contato</h2>
+        <a href="https://wa.me/5599991599690" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://instagram.com/mrbrownie73" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:mr.brownie2307@gmail.com">E-mail</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="current-year"></span> Mr. Brownie Gourmet.
+        Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
